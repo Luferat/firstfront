@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos de FlexBox</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            outline: none;
+        }
+
+        #divpai {
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            gap: 10px;
+            justify-content: end;
+            align-items: safe;
+        }
+
+        .divfilho {
+            background-color: rgb(190, 190, 190);
+        }
+
+        /* Responsividade com Media Queries */
+
+        /* Isso só se aplica a larguras de "PELO MENOS" 768 pixels */
+        @media screen and (min-width: 575px) {
+
+            /* #divpai {
+                flex-direction: row;
+            } */
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="divpai">
+
+        <div class="divfilho">
+            DIV1 Casa<br>Casaco
+        </div>
+
+        <div class="divfilho">
+            DIV2 Carro
+        </div>
+
+        <div class="divfilho">
+            DIV2 Moto<br>Bike<br>Triciclo
+        </div>
+
+    </div>
+
+</body>
+
+</html>
